@@ -8,8 +8,6 @@ class GameEngine:
     diceCup = DiceCup()
     players = []
 
-    # curPlayer = player1
-
     def __init__(self):
         pass
 
