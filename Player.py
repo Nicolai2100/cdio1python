@@ -1,7 +1,6 @@
 class Player:
 
     numberOfPlayers = 0
-    won = False
 
     def __init__(self, name):
         self.__name = name
@@ -9,6 +8,7 @@ class Player:
         Player.numberOfPlayers += 1
         self.__num = self.numberOfPlayers
         self.__sum = 0
+        self.__won = False
 
     def set_name(self, name):
         self.__name = name
@@ -18,6 +18,9 @@ class Player:
 
     def set_sum(self, sum):
         self.__sum += sum
+
+    def delete_sum(self):
+        self.__sum = 0
 
     def get_sum(self):
         return self.__sum
